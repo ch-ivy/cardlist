@@ -1,0 +1,13 @@
+.img-crls {
+  height: 30px;
+  width: 30px;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  &:not(:first-child) {
+    margin-left: -15px;
+  }
+}

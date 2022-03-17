@@ -1,0 +1,46 @@
+<div class="group relative">
+  <div
+    class="w-full sm:h-80 h-60 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none"
+  >
+    <img
+      [src]="details.imageUrl"
+      alt="Front of men&#039;s Basic Tee in black."
+      class="w-full h-full object-center object-cover lg:w-full lg:h-full"
+    />
+  </div>
+  <div class="flex mt-1 justify-between">
+    <div class="flex">
+      <div class="img-crls">
+        <img [src]="details.imageUrl" [alt]="details.name" />
+      </div>
+      <div class="img-crls">
+        <img [src]="details.imageUrl" [alt]="details.name" />
+      </div>
+      <div class="img-crls">
+        <img [src]="details.imageUrl" [alt]="details.name" />
+      </div>
+    </div>
+    <div class="text-gray-400">
+      <i class="fa-regular fa-heart"></i>
+      <i class="fa-solid fa-bars ml-4"></i>
+    </div>
+  </div>
+  <div class="mt-4 flex justify-between">
+    <div>
+      <h3 class="text-md font-semibold text-gray-700">
+        <a>
+          {{ details.name | titlecase }}
+        </a>
+      </h3>
+      <p class="mt-2 text-sm font-semibold text-gray-500">
+        {{ details.description }}
+      </p>
+    </div>
+  </div>
+
+  <p class="my-4 text-sm text-gray-400">
+    {{ details.itemCount }} &nbsp; items left
+  </p>
+
+  <p class="text-sm font-bold text-black">{{ details.price }} USD</p>
+</div>
